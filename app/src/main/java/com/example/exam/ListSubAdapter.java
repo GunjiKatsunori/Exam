@@ -54,6 +54,7 @@ public class ListSubAdapter extends RecyclerView.Adapter<ListSubAdapter.ViewHold
                 Context context = parent.getContext();
                 Intent intent = new Intent(context, SubsubActivity.class);
                 intent.putExtra("Text2", selectedText);
+                intent.putStringArrayListExtra("DataSet", dataset);
 
                 context.startActivity(intent);
             }
