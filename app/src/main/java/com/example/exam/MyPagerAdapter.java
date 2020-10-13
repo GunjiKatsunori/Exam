@@ -25,7 +25,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
         return fragment;
     }
 
-    // ページの総数
+    // ページの総数を返す
     @Override
     public int getCount() {
         return sizeOfData;
