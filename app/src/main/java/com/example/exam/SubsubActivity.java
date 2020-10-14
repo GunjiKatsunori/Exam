@@ -64,5 +64,7 @@ public class SubsubActivity extends AppCompatActivity {
         String text = cursor.getString(0) + cursor.getInt(1);
         Button button = findViewById(R.id.add_button);
         button.setText(text);
+
+        cursor.close();
     }
 }
